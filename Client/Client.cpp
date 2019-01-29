@@ -22,6 +22,7 @@ int main()
 	char received[256];
 	string sent;
 
+	cout << "클라이언트 시작" << "\n";
 	if (WSAStartup(MAKEWORD(2, 2), &WsaData) != 0) //winsock 초기화 makeword(2,2)버전 사용
 		ShowErrorMessage("WSAStartip()");
 
